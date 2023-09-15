@@ -1,0 +1,98 @@
+* {
+    margin: 0px;
+}
+.side-pannel {
+    background-color: #07a907;
+    width: fit-content;
+    height: 180vh;
+    padding: 50px 50px 50px 0px;
+}
+.open  ,.close {
+    width: 20px;
+    height: 20px;
+    background-color: #07a907;
+    border: none;
+    margin: 10px;
+    display: none;
+}
+.profile, .students, .logout {
+    margin: 10px 10px 10px 0px;
+    padding: 10px 10px 10px 40px;
+    color: white;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 98%
+}
+
+.profile a, .students a, .logout a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-family: 'Lucida Grande', Arial, sans-serif;
+}
+
+#active {
+    border-left: 4px solid white;
+    background-color: green;
+}
+
+.content {
+    width: 100%;
+    height: 100vh;
+}
+
+.f-page {
+    display: flex;
+    gap: 20px;
+}
+
+/* media queries */
+@media only screen and (min-width: 768px) and (max-width: 999px){
+
+}
+@media only screen and (min-width: 620px) and (max-width: 767px) {
+    .side-pannel {
+        width: 20px;
+         position: absolute;
+    }
+    .profile, .students, .logout {
+       display: none;
+    }
+    .open{
+        display: block;
+        color:white;
+    }
+}
+@media only screen and (min-width: 511px) and (max-width: 619px) {
+  .side-pannel {
+        width: 20px;
+       position: absolute;
+    }
+    .profile, .students, .logout {
+       display: none;
+    }
+    .open{
+        display: block;
+        color:white;
+    }
+}
+@media only screen and (max-width: 510px) {
+  .side-pannel {
+      position: absolute;
+      background-color: transparent;
+    }
+    .profile, .students, .logout {
+       display: none;
+    }
+    .open{
+        background-color: #07a907;
+        color: white;
+        display: block;
+        width: 30px;
+        height: 27px;
+        margin: 5px;
+        border-radius: 5px;
+
+    }
+}

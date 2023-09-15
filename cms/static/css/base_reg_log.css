@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+}
+.bg{
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/bg3.jpg');
+  z-index: -1;
+  background-size: cover;
+  filter: brightness(50%);
+}
+.bg .with-form{
+    display: flex;
+    gap:30px;
+}
+.bg .welcome{
+    color: white;
+    text-align: center;
+    font-size: 2.8em;
+    font-family: 'Lucida Grande', Arial, sans-serif;
+
+}
+.log-reg-side{
+    display: flex;
+}
+.log-reg-side .log-reg{
+    background-color: white;
+    width : 180px;
+    height : 195px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.log-reg .log , .log-reg .reg{
+    color: black;
+    text-decoration: none;
+    font-family: 'Lucida Grande', Arial, sans-serif;
+    font-weight:500;
+    font-size:1.2em;
+}
+.active{
+    background-color: green;
+    width : 180px;
+    height : 195px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.active .log , .active .reg{
+    color: white;
+    text-decoration: none;
+    font-family: 'Lucida Grande', Arial, sans-serif;
+    font-weight:500;
+     font-size:1.2em;
+}
+.active svg{
+    width: 40px;
+    height: 40px;
+    color:white;
+}
+.log-reg svg{
+    width: 40px;
+    height: 40px;
+}
+.log-reg-side .side-img{
+    width : 250px;
+    height : 390px;
+}
+.log-reg-side .log-reg-div{
+    display: flex;
+    flex-direction: column;
+}
+.bg .form-log-reg{
+    background-color: white;
+    width : 580px;
+    height : 390px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flash_msg {
+    background-color: white;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 10px;
+    width: 250px;
+    height: 50px;
+    font-family: 'Lucida Grande', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.green-text {
+    color: green;
+}
+.red-text {
+    color: red;
+}
+/* media queries */
+
+/* Tablet Portrait size to standard 1000 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 999px) {
+    .log-reg-side .side-img {
+        width: 130px;
+    }
+    .log-reg-side .log-reg {
+        width: 150px;
+    }
+    .active {
+        width: 150px;
+    }
+    .bg .form-log-reg {
+        width: 550px;
+    }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 620px) and (max-width: 767px) {
+     .log-reg-side .side-img {
+        width: 80px;
+         height : 350px;
+    }
+    .log-reg-side .log-reg {
+        width: 100px;
+         height : 175px;
+    }
+    .active {
+        width: 100px;
+        height : 175px;
+    }
+    .bg .form-log-reg {
+        width: 500px;
+         height : 350px;
+    }
+}
+
+@media only screen and (min-width: 511px) and (max-width: 619px) {
+    .log-reg-side .side-img {
+        display: none;
+    }
+    .log-reg-side .log-reg {
+        width: 100px;
+         height : 175px;
+    }
+    .active {
+        width: 100px;
+        height : 175px;
+    }
+    .bg .form-log-reg {
+        width: 450px;
+         height : 350px;
+    }
+    .bg .with-form {
+        gap: 20px;
+    }
+    .bg .welcome {
+        font-size: 2.5em;
+    }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 510px) {
+    .log-reg-side .side-img {
+        display: none;
+    }
+    .log-reg-side .log-reg {
+        width: 165px;
+         height : 100px;
+    }
+    .active {
+        width: 165px;
+        height : 100px;
+    }
+    .bg .form-log-reg {
+        width: 330px;
+         height : 350px;
+    }
+    .bg .with-form {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .log-reg-side .log-reg-div {
+        flex-direction: row;
+    }
+    .bg .welcome {
+        font-size: 2.1em;
+    }
+    .active svg {
+        width: 30px;
+        height: 30px;
+    }
+    .log-reg svg {
+        width: 30px;
+        height: 30px;
+    }
+    .log-reg .log, .log-reg .reg {
+        font-size: 1.0em;
+    }
+    .active .log, .active .reg {
+        font-size: 1.0em;
+    }
+}

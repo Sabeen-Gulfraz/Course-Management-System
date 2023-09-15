@@ -1,0 +1,145 @@
+{% extends "base_log_reg.html" %}
+
+{% block title %}Login{% endblock title %}
+
+{% block style %}
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin: 10px;
+    }
+
+    .inp {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 10px;
+    }
+
+    .log-head {
+        margin: 10px;
+        text-align: center;
+        font-family: 'Lucida Grande', Arial, sans-serif;
+        font-weight: 500;
+        font-size: 1.7em;
+    }
+
+    input[type=text], input[type=password] {
+        width: 500px;
+        height: 50px;
+        border: none;
+        background-color: #e1dede;
+        font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+    }
+
+    input[type=text]:focus, input[type=password]:focus {
+        outline: none;
+        background-color: #e1dede;
+        font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+    }
+
+    input[type=text] {
+        background-image: url("../static/images/user.png");
+        background-position: 10px 15px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+    }
+
+    input[type=password] {
+        background-image: url("../static/images/key (2).png");
+        background-position: 10px 15px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+    }
+
+    input[type=submit] {
+        width: 500px;
+        height: 50px;
+        border: none;
+        font-family: 'Lucida Grande', Arial, sans-serif;
+        background-color: green;
+        color: white;
+        font-size: 1.1em;
+        transition: background-color 1.0s ease;
+        margin-left: 9px;
+    }
+
+    input[type=submit]:hover {
+        background-color: lightgreen;
+    }
+
+    .log {
+        color: gray;
+        text-decoration: none;
+        font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .log span {
+        color: blue;
+    }
+
+    /* media queries */
+    @media only screen and (min-width: 620px) and (max-width: 767px) {
+        input[type=text], input[type=password] {
+            width: 430px;
+        }
+
+        input[type=submit] {
+            width: 430px;
+        }
+    }
+    @media only screen and (min-width: 511px) and (max-width: 619px) {
+        input[type=text], input[type=password] {
+            width: 400px;
+        }
+
+        input[type=submit] {
+            width: 400px;
+        }
+    }
+    @media only screen and (max-width: 510px) {
+         input[type=text], input[type=password] {
+            width: 300px;
+        }
+        input[type=submit] {
+            width: 300px;
+        }
+
+        .log-head {
+            font-size: 1.5em;
+        }
+
+        .log {
+            font-size: 0.8em;
+        }
+    }
+</style>
+{% endblock style %}
+
+{% block form %}
+<h3 class="log-head">Login Here</h3>
+<form action="/" method="post">
+       <div class="inp">
+           <input class="input" type="text" placeholder="Username" name="username" required>
+           <input  class="input" type="password" placeholder="Password" name="password"  required>
+       </div>
+       <div>
+           <input type="Submit" value="Login">
+       </div>
+       <a class="log" href="/register">Do not have an account? <span>Register Now</span> </a>
+</form>
+{% endblock form %}
+
+{% block script %}
+  <script>
+      $("#log").removeClass("log-reg").addClass("active");
+  </script>
+{% endblock script %}

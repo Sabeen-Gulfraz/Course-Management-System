@@ -1,0 +1,196 @@
+{% extends "base_log_reg.html" %}
+
+{% block title %}Register{% endblock title %}
+
+{% block style %}
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 0px;
+    }
+
+    .reg-head {
+        margin: 0px;
+        text-align: center;
+        font-family: 'Lucida Grande', Arial, sans-serif;
+        font-weight: 500;
+        font-size: 1.5em;
+    }
+
+    .inp {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 10px;
+    }
+
+    input[type=text], input[type=password] {
+        width: 500px;
+        height: 40px;
+        border: none;
+        background-color:#e1dede;
+        font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+    }
+
+    input[type=text] {
+        background-image: url("../static/images/user.png");
+        background-position: 10px 15px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+    }
+
+    input[type=password] {
+        background-image: url("../static/images/key (2).png");
+        background-position: 10px 15px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+    }
+
+    input[type=submit] {
+        width: 500px;
+        height: 40px;
+        border: none;
+        font-family: 'Lucida Grande', Arial, sans-serif;
+        background-color: green;
+        color: white;
+        font-size: 1.1em;
+        transition: background-color 1.0s ease;
+        margin-left: 9px;
+    }
+
+    input[type=submit]:hover {
+        background-color: lightgreen;
+    }
+
+    .reg {
+        color: gray;
+        text-decoration: none;
+        font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .reg span {
+        color: blue;
+    }
+
+    input[type=text]:focus, input[type=password]:focus {
+        outline: none;
+        background-color: #e1dede;
+        font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+    }
+
+    select {
+        width: 500px;
+        height: 40px;
+        border: none;
+        color: gray;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-color: #e1dede;
+        font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+        background-image: url("../static/images/assign.png");
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+    }
+
+    select:focus {
+        outline: none;
+        background-color: #dcd8d8;
+        font-family: 'Consolas', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+    }
+
+    /* media queries */
+
+    @media only screen and (min-width: 620px) and (max-width: 767px) {
+        input[type=text], input[type=password] {
+            width: 430px;
+             height: 30px;
+             background-position: 10px 8px;
+        }
+
+        input[type=submit] {
+            width: 430px;
+             height: 30px;
+        }
+        select{
+            width: 430px;
+        }
+    }
+
+    @media only screen and (min-width: 511px) and (max-width: 619px) {
+        input[type=text], input[type=password] {
+            width: 400px;
+             height: 30px;
+             background-position: 10px 8px;
+        }
+
+        input[type=submit] {
+            width: 400px;
+             height: 30px;
+        }
+        select{
+            width: 400px;
+        }
+    }
+
+    @media only screen and (max-width: 510px) {
+        input[type=text], input[type=password] {
+            width: 300px;
+             height: 30px;
+             background-position: 10px 8px;
+        }
+
+        input[type=submit] {
+            width: 300px;
+             height: 30px;
+             font-size: 1.0em;
+        }
+        select{
+            width: 300px;
+        }
+        .reg-head {
+            font-size: 1.5em;
+        }
+        .reg{
+            font-size: 0.8em;
+        }
+    }
+</style >
+{% endblock style %}
+
+{% block form %}
+  <h3 class="reg-head">Register Here</h3>
+   <form method="post" action="/register">
+        <div class="inp">
+           <input class="input" type="text" placeholder="Username" name="username" >
+           <input class="input" type="password" placeholder="Password" name="password" >
+            <input class="input" type="password" placeholder="Confirm password" name="confirm-password">
+            <select class="input" name="course">
+                {% for opt in my_options %}
+                    <option value="{{ opt }}">{{ opt }}</option>
+                {% endfor %}
+            </select>
+       </div>
+       <div>
+           <input type="Submit" value="Register">
+       </div>
+       <a class="reg" href="/login">Already have an account? <span>Login Now</span> </a>
+   </form>
+{% endblock form %}
+
+{% block script %}
+  <script>
+      $("#reg").removeClass("log-reg").addClass("active");
+      $(".svg-reg").removeAttr("fill");
+      $(".svg-reg").attr("fill", "white");
+  </script>
+{% endblock script %}
