@@ -16,7 +16,7 @@ COURSE = [
         "course": "Web Development",
         "Students": [
             {
-                "name": "Penelope Grant",
+                "name": "PenelopeGrant",
                 "profile_pic":  '/static/images/stu_boy.jpeg',
                 "Phone_no": "755-1520-19",
                 "quizes": [
@@ -38,7 +38,7 @@ COURSE = [
                 ]
             },
             {
-                "name": "Alissa  Farrell",
+                "name": "AlissaFarrell",
                 "Phone_no": "004-8633-37",
                 "profile_pic": '/static/images/stu_girl.jpg',
                 "quizes": [
@@ -60,7 +60,7 @@ COURSE = [
                 ]
             },
             {
-                "name": "Adrian  Wells",
+                "name": "AdrianWells",
                 "Phone_no": "134-9683-77",
                 "profile_pic": '/static/images/stu_boy.jpeg',
                 "quizes": [
@@ -80,7 +80,7 @@ COURSE = [
                 ]
             },
             {
-                "name": "Max Perry",
+                "name": "MaxPerry",
                 "Phone_no": "354-3565-61",
                 "profile_pic": '/static/images/stu_boy.jpeg',
                 "quizes": [
@@ -102,7 +102,7 @@ COURSE = [
                 ]
             },
             {
-                "name": "Sabrina Cole",
+                "name": "SabrinaCole",
                 "Phone_no": "396-3359-50",
                 "profile_pic": '/static/images/stu_girl.jpg',
                 "quizes": [
@@ -119,7 +119,7 @@ COURSE = [
                 ]
             },
             {
-                "name": "Heather Cole",
+                "name": "HeatherCole",
                 "Phone_no": "756-3754-78",
                 "profile_pic": '/static/images/stu_boy.jpeg',
                 "quizes": [
@@ -131,7 +131,7 @@ COURSE = [
                 ]
             },
             {
-                "name": "Brianna Harrison",
+                "name": "BriannaHarrison",
                 "Phone_no": "293-0231-64",
                 "profile_pic": '/static/images/stu_girl.jpg',
                 "quizes": [
@@ -148,7 +148,7 @@ COURSE = [
                 ]
             },
             {
-                "name": "Amber Ross",
+                "name": "AmberRoss",
                 "Phone_no": "285-8794-25",
                 "profile_pic": '/static/images/stu_girl.jpg',
                 "quizes": [
@@ -175,7 +175,7 @@ COURSE = [
                 ]
             },
             {
-                "name": "Edwin Evans",
+                "name": "EdwinEvans",
                 "Phone_no": "397-0707-14",
                 "profile_pic": '/static/images/stu_boy.jpeg',
                 "quizes": [
@@ -197,7 +197,7 @@ COURSE = [
         "course": "Mobile App. Development",
         "Students": [
             {
-                "name": "William Jones",
+                "name": "WilliamJones",
                 "Phone_no": "377-7395-29",
                 "profile_pic": '/static/images/stu_boy.jpeg',
                 "quizes": [
@@ -214,7 +214,7 @@ COURSE = [
                 ]
             },
             {
-                "name": "Charlotte Richardson",
+                "name": "CharlotteRichardson",
                 "Phone_no": "975-5867-68",
                 "profile_pic": '/static/images/stu_boy.jpeg',
                 "quizes": [
@@ -231,7 +231,7 @@ COURSE = [
                 ]
             },
             {
-                "name": "Roman Edwards",
+                "name": "RomanEdwards",
                 "Phone_no": "837-0907-25",
                 "profile_pic": '/static/images/stu_boy.jpeg',
                 "quizes": [
@@ -243,7 +243,7 @@ COURSE = [
                 ]
             },
             {
-                "name": "Dale Morris",
+                "name": "DaleMorris",
                 "Phone_no": "315-7266-07",
                 "profile_pic": '/static/images/stu_boy.jpeg',
                 "quizes": [
@@ -255,7 +255,7 @@ COURSE = [
                 ]
             },
             {
-                "name": "Victoria Brown",
+                "name": "VictoriaBrown",
                 "Phone_no": "354-2247-15",
                 "profile_pic": '/static/images/stu_girl.jpg',
                 "quizes": [
@@ -267,7 +267,7 @@ COURSE = [
                 ]
             },
             {
-                "name": "Sofia Ellis",
+                "name": "SofiaEllis",
                 "Phone_no": "008-3382-10",
                 "profile_pic": '/static/images/stu_girl.jpg',
                 "quizes": [
@@ -279,7 +279,7 @@ COURSE = [
                 ]
             },
             {
-                "name": "Chester Parker",
+                "name": "ChesterParker",
                 "Phone_no": "013-0999-92",
                 "profile_pic": '/static/images/stu_boy.jpeg',
                 "quizes": [
@@ -291,7 +291,7 @@ COURSE = [
                 ]
             },
             {
-                "name": "Cadie Wilson",
+                "name": "CadieWilson",
                 "Phone_no": "118-5801-26",
                 "profile_pic": '/static/images/stu_boy.jpeg',
                 "quizes": [
@@ -303,7 +303,7 @@ COURSE = [
                 ]
             },
             {
-                "name": "Heather Fowler",
+                "name": "HeatherFowler",
                 "Phone_no": "938-6954-91",
                 "profile_pic": '/static/images/stu_boy.jpeg',
                 "quizes": [
@@ -332,7 +332,7 @@ COURSE = [
         "course": "DataBase",
         "Students": [
             {
-                "name": "Victoria Robinson",
+                "name": "VictoriaRobinson",
                 "Phone_no": "227-8520-38",
                 "profile_pic": '/static/images/stu_girl.jpg',
                 "quizes": [
@@ -392,7 +392,7 @@ COURSE = [
                 ]
             },
             {
-                "name": "Michael Farrell",
+                "name": "MichaelFarrell",
                 "Phone_no": "737-1111-62",
                 "profile_pic": '/static/images/stu_boy.jpeg',
                 "quizes": [
@@ -404,7 +404,7 @@ COURSE = [
                 ]
             },
             {
-                "name": "Brad Clark",
+                "name": "BradClark",
                 "Phone_no": "706-8153-40",
                 "profile_pic": '/static/images/stu_boy.jpeg',
                 "quizes": [
@@ -440,7 +440,7 @@ COURSE = [
                 ]
             },
             {
-                "name": "Tess Fowler",
+                "name": "TessFowler",
                 "Phone_no": "590-4125-65",
                 "profile_pic": '/static/images/stu_boy.jpeg',
                 "quizes": [
@@ -457,7 +457,7 @@ COURSE = [
         "course": "Artificial Intelligence",
         "Students": [
             {
-                "name": "Ada Brown",
+                "name": "AdaBrown",
                 "Phone_no": "352-0246-40",
                 "profile_pic": '/static/images/stu_girl.jpg',
                 "quizes": [
@@ -469,7 +469,7 @@ COURSE = [
                 ]
             },
             {
-                "name": "Dominik Perry",
+                "name": "DominikPerry",
                 "Phone_no": "867-8502-74",
                 "profile_pic": '/static/images/stu_girl.jpg',
                 "quizes": [
@@ -481,7 +481,7 @@ COURSE = [
                 ]
             },
             {
-                "name": "Maya Carter",
+                "name": "MayaCarter",
                 "Phone_no": "867-9688-78",
                 "profile_pic": '/static/images/stu_girl.jpg',
                 "quizes": [
@@ -493,7 +493,7 @@ COURSE = [
                 ]
             },
             {
-                "name": "Mary Martin",
+                "name": "MaryMartin",
                 "Phone_no": "543-1113-66",
                 "profile_pic": '/static/images/stu_girl.jpg',
                 "quizes": [
@@ -517,7 +517,7 @@ COURSE = [
                 ]
             },
             {
-                "name": "Victoria Thompson",
+                "name": "VictoriaThompson",
                 "Phone_no": "103-4787-36",
                 "profile_pic": '/static/images/stu_girl.jpg',
                 "quizes": [
@@ -529,7 +529,7 @@ COURSE = [
                 ]
             },
             {
-                "name": "Dainton Jones",
+                "name": "DaintonJones",
                 "Phone_no": "886-5765-38",
                 "profile_pic": '/static/images/stu_boy.jpeg',
                 "quizes": [
@@ -541,7 +541,7 @@ COURSE = [
                 ]
             },
             {
-                "name": "Dale Bailey",
+                "name": "DaleBailey",
                 "Phone_no": "446-2765-88",
                 "profile_pic": '/static/images/stu_boy.jpeg',
                 "quizes": [
@@ -565,7 +565,7 @@ COURSE = [
                 ]
             },
             {
-                "name": "Garry Carter",
+                "name": "GarryCarter",
                 "Phone_no": "296-5454-07",
                 "profile_pic": '/static/images/stu_girl.jpg',
                 "quizes": [
